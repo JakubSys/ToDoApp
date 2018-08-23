@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+    background: white;
+
+}
+.button {
+    border-radius: 50%;
+    color: white;
+}
+.row .button-check{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #e1e1e1;
+    margin-right: 15px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .button-check--complete {
+    background: #4b60a2;
+    border: 1px solid #4b60a2;
+}
+
+.row .button-check--incomplete {
+    background: white;
+}
+ .settings{
+     display: flex;
+ }
+ .settings button  a {
+     display: flex;
+     height: 31px;
+     width: 31px;
+     justify-content: center;
+     align-items: center;
+     margin-left: 15px;
+     border: none;
+     font-size: 12px;
+ }

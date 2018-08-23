@@ -61,9 +61,9 @@ export function toggleComplete(data) {
     }
 }
 
-export function removeItem(id) {
+export function removeItem(itemId) {
     return (dispatch, getState) => {
-        dispatch({ type: 'REMOVE_ITEM', data: id });
+        dispatch({ type: 'REMOVE_ITEM', data: itemId });
         dispatch(saveDataInLocalStorage());
     }
 }
