@@ -45,7 +45,7 @@ class List extends Component {
         if(type === 'complete') {
             this.setList(
                 this.props.todoList.map(item => {
-                    if(item.message.includes(this.inputRef.current.value) && item.complete) {
+                    if(item.message.includes(this.inputRef.current.value) && item.isCompleted) {
                         return { ...item, hidden: false };
                     }
                     return { ...item, hidden: true };
@@ -55,7 +55,7 @@ class List extends Component {
         } else if(type === 'incomplete') {
             this.setList(
                 this.props.todoList.map(item => {
-                    if(item.message.includes(this.inputRef.current.value) && !item.complete) {
+                    if(item.message.includes(this.inputRef.current.value) && !item.isCompleted) {
                         return { ...item, hidden: false };
                     }
                     return { ...item, hidden: true };
