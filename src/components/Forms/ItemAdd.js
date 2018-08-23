@@ -6,12 +6,12 @@ import Form from "./Form";
 import { addItem } from "../../Actions/todo/Actions";
 
 class ItemAdd extends Component {
-    static propTypes = {
-        todoList: PropTypes.array.isRequired,
-        addItem: PropTypes.func.isRequired,
-    };
+  static propTypes = {
+    todoList: PropTypes.array.isRequired,
+    addItem: PropTypes.func.isRequired
+  };
 
-    render() {
+  render() {
     return (
       <Form
         onClickHandle={data => this.props.addItem(data, this.props.history)}
