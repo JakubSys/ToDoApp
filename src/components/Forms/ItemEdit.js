@@ -27,7 +27,7 @@ ItemEdit.propTypes = {
     updateMessage: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({todoList: state.todo.list,});
+const mapStateToProps = state => ({todoList: state.todo.list});
 
 const mapDispatchToProps = dispatch => bindActionCreators({updateMessage}, dispatch);
 

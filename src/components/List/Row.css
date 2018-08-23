@@ -34,18 +34,7 @@
  .settings{
      display: flex;
  }
- .settings  a {
-     display: flex;
-     height: 31px;
-     width: 31px;
-     justify-content: center;
-     align-items: center;
-     margin-left: 15px;
-     border: none;
-     font-size: 12px;
-     float: right;
- }
-.settings .button  {
+.settings a, a:visited {
     display: flex;
     height: 31px;
     width: 31px;
@@ -54,4 +43,21 @@
     margin-left: 15px;
     border: none;
     font-size: 12px;
+    text-decoration: none;
+}
+.settings .button {
+    display: flex;
+    height: 31px;
+    width: 31px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    border: none;
+    font-size: 12px;
+}
+.settings .button-edit {
+    background: #99C5C9;
+}
+.settings .button-remove{
+    background: #99C5C9;
 }

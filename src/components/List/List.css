@@ -64,10 +64,9 @@
     bottom: 2px;
     border: none;
     border-radius: 20px;
-    background-color: #e1e1e1;
     border: 1px solid #e1e1e1;
 }
-.radio-button:active:before{
+.radio-button-active:before{
     background-color: #4b60a1;
     border: 1px solid #4b60a1;
 }

@@ -5,8 +5,9 @@ import { routerMiddleware } from 'react-router-redux';
 import thunk from 'redux-thunk';
 import reducers from '../Reducers/Reducer';
 
-const enhancers = [];
+
 export const history = createHistory();
+const enhancers = [];
 const middleware = routerMiddleware(history);
 
 if (process.env.NODE_ENV === 'development') {
