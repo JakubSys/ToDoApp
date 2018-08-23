@@ -11,7 +11,7 @@ export default class Form extends Component {
         this.state = {
             item: { itemId: null, message: '', isCompleted: false } }
         this.inputRef = React.createRef();
-        this.handleChange = this.handleChange.bind(this);
+        this.onChangeHandle = this.onChangeHandle.bind(this);
         this.newItem = this.newItem.bind(this);
     }
     onChangeHandle(e) {

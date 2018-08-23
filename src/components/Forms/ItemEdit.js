@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import Form from './Form';
 
-import { updateMessage } from '../../redux/todo';
+import { updateMessage } from '../../Actions/todo/Actions';
 
 class ItemEdit extends Component {
     findItem() {
@@ -14,7 +14,7 @@ class ItemEdit extends Component {
     render() {
         return (
             <Form
-                item={this.getItem()}
+                item={this.findItem()}
                 onClickHandle={(data) => this.props.updateMessage(data, this.props.history)}
                 hText="Edit Item"
             />

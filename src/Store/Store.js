@@ -3,7 +3,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
 import thunk from 'redux-thunk';
-import reducers from '../Reducers';
+import reducers from '../Reducers/Reducer';
 
 const enhancers = [];
 export const history = createHistory();
