@@ -47,12 +47,13 @@ a:visited {
 .settings .button {
   display: flex;
   height: 31px;
-  width: 31px;
+  min-width: fit-content;
   justify-content: center;
   align-items: center;
   margin-left: 15px;
   border: none;
   font-size: 12px;
+  padding: 0 0.4em 0 0.4em;
 }
 .settings .button-edit {
   background: #99c5c9;
