@@ -9,7 +9,7 @@ const todo = (state = initialState, action) => {
         ...state,
         list: state.list.concat(action.data)
       };
-    case "UPDATE_ITEM":
+    case "UPDATE_ITEM": {
       const itemIndex = state.list.findIndex(
         item => item.itemId === action.data.itemId
       );
@@ -25,6 +25,7 @@ const todo = (state = initialState, action) => {
           };
         })
       };
+    }
     case "REMOVE_ITEM":
       return {
         ...state,

@@ -5,15 +5,30 @@ import { Link } from "react-router-dom";
 import "./Form.css";
 
 export default class Form extends Component {
+  static defaultProps = { item: { id: null, message: "", isCompleted: false } };
+  static propTypes = {
+    hText: PropTypes.string.isRequired,
+    item: PropTypes.object
+  };
+
   constructor(props) {
     super(props);
-    this.state = {
-      item: { itemId: null, message: "", isCompleted: false }
-    };
+    this.state = { item: { itemId: null, message: "", isCompleted: false } };
     this.inputRef = React.createRef();
     this.onChangeHandle = this.onChangeHandle.bind(this);
     this.newItem = this.newItem.bind(this);
   }
+
+  componentDidMount() {
+    this.newItem(this.props.item);
+    this.inputRef.current.focus();
+  }
+  componentDidUpdate(prevProps) {
+    if (!_isEqual(this.props.item, prevProps.item)) {
+      this.newItem(this.props.item);
+    }
+  }
+
   onChangeHandle(e) {
     this.setState({
       item: {
@@ -27,16 +42,7 @@ export default class Form extends Component {
   newItem(item) {
     this.setState({ item });
   }
-  componentDidMount() {
-    this.newItem(this.props.item);
-    this.inputRef.current.focus();
-  }
 
-  componentDidUpdate(prevProps) {
-    if (!_isEqual(this.props.item, prevProps.item)) {
-      this.newItem(this.props.item);
-    }
-  }
   render() {
     return (
       <form className="form-container">
@@ -61,15 +67,3 @@ export default class Form extends Component {
     );
   }
 }
-
-Form.defaultProps = {
-  item: {
-    id: null,
-    message: "",
-    isCompleted: false
-  }
-};
-Form.propTypes = {
-  hText: PropTypes.string.isRequired,
-  item: PropTypes.object
-};

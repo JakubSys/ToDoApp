@@ -6,7 +6,12 @@ import Form from "./Form";
 import { addItem } from "../../Actions/todo/Actions";
 
 class ItemAdd extends Component {
-  render() {
+    static propTypes = {
+        todoList: PropTypes.array.isRequired,
+        addItem: PropTypes.func.isRequired,
+    };
+
+    render() {
     return (
       <Form
         onClickHandle={data => this.props.addItem(data, this.props.history)}
@@ -15,11 +20,6 @@ class ItemAdd extends Component {
     );
   }
 }
-
-ItemAdd.propTypes = {
-  todoList: PropTypes.array.isRequired,
-  addItem: PropTypes.func.isRequired
-};
 
 const mapStateToProps = state => ({ todoList: state.todo.list });
 

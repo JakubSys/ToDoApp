@@ -17,9 +17,9 @@ class ItemEdit extends Component {
     return (
       <Form
         item={this.findItem()}
-        onClickHandle={data =>
-          this.props.updateMessage(data, this.props.history)
-        }
+        onClickHandle={data => {
+          this.props.updateMessage(data, this.props.history);
+        }}
         hText="Edit Item"
       />
     );

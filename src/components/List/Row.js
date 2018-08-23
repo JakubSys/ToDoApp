@@ -19,6 +19,7 @@ class Row extends Component {
                   ? "button-check--complete"
                   : "button-check--incomplete"
               }`}
+              type="button"
             />
             <span>{this.props.item.message}</span>
             <div className="settings">
@@ -31,6 +32,7 @@ class Row extends Component {
               <button
                 onClick={() => this.props.removeItem(this.props.item.itemId)}
                 className="button button-remove"
+                type="button"
               >
                 Delete
               </button>
