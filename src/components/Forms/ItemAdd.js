@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Form from './Form';
+import { addItem } from '../../redux/actions/todo';
 
 class ItemAdd extends Component{
     render(){

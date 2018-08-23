@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import Form from './Form';
 
+import { updateMessage } from '../../redux/actions/todo';
+
 class ItemEdit extends Component {
     findItem() {
         return this.props.todoList.find(item => item.itemId === Number(this.props.match.params.itemId));
