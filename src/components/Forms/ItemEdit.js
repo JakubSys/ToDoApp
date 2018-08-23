@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import Form from './Form';
 
-import { updateMessage } from '../../redux/actions/todo';
+import { updateMessage } from '../../redux/todo';
 
 class ItemEdit extends Component {
     findItem() {
