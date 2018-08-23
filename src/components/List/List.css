@@ -1,73 +1,72 @@
 .list-container {
-    display: flex;
-    height: calc(100% - 150px);
-    overflow: auto;
-    flex: 1;
-    flex-direction: column;
+  display: flex;
+  height: calc(100% - 150px);
+  overflow: auto;
+  flex: 1;
+  flex-direction: column;
 }
 
 .list-settings {
-    padding: 30px 30px 0 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+  padding: 30px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .list-settings input {
-    font-size: 16px;
-    border: 0;
-    border-bottom: 1px solid #e1e1e1;
-    outline: none;
-    padding: 5px;
-    font-family: LatoLight;
-    margin-bottom: 20px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #e1e1e1;
+  outline: none;
+  padding: 5px;
+  font-family: LatoLight;
+  margin-bottom: 20px;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0;
 }
 .radio-buttons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .radio-button {
-    cursor: pointer;
-    position: relative;
-    font-size: 16px;
-    font-family: LatoLight;
-    padding-left: 25px;
-    line-height: 20px;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-family: LatoLight;
+  padding-left: 25px;
+  line-height: 20px;
 }
 
 .radio-button input {
-    display: none;
+  display: none;
 }
 .radio-button:first-child {
-    margin-right: 15px;
+  margin-right: 15px;
 }
-.radio-button:nth-child(2){
-    margin-right: 15px;
+.radio-button:nth-child(2) {
+  margin-right: 15px;
 }
-.radio-button:before{
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin: 0;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    border: none;
-    border-radius: 20px;
-    border: 1px solid #e1e1e1;
+.radio-button:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
 }
-.radio-button-active:before{
-    background-color: #4b60a1;
-    border: 1px solid #4b60a1;
+.radio-button-active:before {
+  background-color: #4b60a1;
+  border: 1px solid #4b60a1;
 }
-

@@ -1,10 +1,9 @@
-*{
+* {
   font-family: "SansSerif";
 }
 body {
   margin: 0;
   padding: 0;
-
 }
 
 button {
@@ -28,6 +27,4 @@ button {
   font-size: 20px;
   text-decoration: none;
   font-family: "Agency FB";
-
-
 }
