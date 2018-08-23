@@ -1,15 +1,16 @@
-Jakub Sys ToDoList
+# **Jakub Sys ToDoList**
 
-Features:
+## Features:
+- edit
+- remove
+- sort
+- dragAndDrop
+- localStorage Save
+- filtering
+- add new todo
 
-Edit,
-Remove,
-Sort,
-DragAndDrop,
-LocalStorage Save,
-Search Through,
-Add New Todo
-
-NPM:
+## NPM:
+```bash
 npm install
 npm start
+```
