@@ -1,5 +1,28 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: SansSerif;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  background: #2ebaef;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+
+
 }

@@ -13,11 +13,11 @@ class Row extends Component {
                 {
                     !this.props.item.hidden &&
                     <li className="row">
-                        <button onClick={() => this.props.toggleComplete(this.props.item)} className={`button button-check ${this.props.item.complete ? 'button-check--complete' : 'button-check--incomplete'}`}>X</button>
+                        <button onClick={() => this.props.toggleComplete(this.props.item)} className={`button button-check ${this.props.item.complete ? 'button-check--complete' : 'button-check--incomplete'}`}></button>
                         <span>{this.props.item.message}</span>
                         <div className="settings">
-                            <Link to={`/edit/${this.props.item.id}`} className="button button-edit">X</Link>
-                            <button onClick={() => this.props.removeItem(this.props.item.id)} className="button button-remove">X</button>
+                            <Link to={`/edit/${this.props.item.id}`} className="button button-edit">Edit me</Link>
+                            <button onClick={() => this.props.removeItem(this.props.item.id)} className="button button-remove">Remove me</button>
                         </div>
                     </li>
                 }

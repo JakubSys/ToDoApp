@@ -37,7 +37,7 @@ export default class Form extends Component {
                 <h1>{this.props.hText}</h1>
                 <input ref={this.inputRef} value={this.state.item.message} onChange={this.onChangeHandle} />
                 <button type="submit" onClick={() => this.props.onClickHandle(this.state.item)}> Submit</button>
-                <Link to="/" className="nav-button"> => </Link>
+                <Link to="/" className="nav-button"> ESC </Link>
             </form>
         );
     }
