@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router , Route } from 'react-router-dom';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
 
     componentDidMount() {
 
@@ -28,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default App;
+
