@@ -1,5 +1,6 @@
 # **Jakub Sys ToDoList**
 
+#CSS UNDER CONSTRUCTION :(
 ## Features:
 - edit
 - remove
