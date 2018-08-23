@@ -21,7 +21,7 @@ class App extends Component {
               <div className="app">
                   <div className="app-box">
                       <header className="app-header">
-                          <span className="app-title">To(Pls Hire me)Do-App</span>
+                          <span className="app-title">My Todo App</span>
                       </header>
                       <Route exact path="/" component={List} />
                       <Route exact path="/add" component={ItemAdd} />

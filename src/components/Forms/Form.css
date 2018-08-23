@@ -6,9 +6,8 @@
     flex-direction: column;
 }
 .form-container h1  {
-    font-size: 20px;
+    font-size: 45px;
     margin: 10px 0 30px 0;
-    font-family: SansSerif;
 }
 
 .form-container input {
@@ -23,8 +22,8 @@
 .form-container button {
     margin-top: 20px;
     width: 200px;
-    color: black;
-    background: #65f0f0;
+    color: white;
+    background: #2ebaef;
     border: none;
     padding: 15px 10px;
     font-size: 14px;

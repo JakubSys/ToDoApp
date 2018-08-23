@@ -1,6 +1,6 @@
 function generateID(list) {
     if(list.length) {
-        return (Math.max.apply(Math, list.map(item => item.id)) + 1);
+        return (Math.max.apply(Math, list.map(item => item.itemId)) + 1);
     }
     return 1;
 }
@@ -34,7 +34,7 @@ export function addItem(data, history) {
     return (dispatch, getState) => {
         dispatch({
             type: 'ADD_ITEM',
-            data: { id: generateID(getState().todo.list), message: data.message, complete: data.complete }
+            data: { itemId: generateID(getState().todo.list), message: data.message, isCompleted: data.isCompleted }
         });
         history.push('/');
         dispatch(saveDataInLocalStorage());
@@ -57,7 +57,7 @@ export function updateMessage(data, history) {
 
 export function toggleComplete(data) {
     return dispatch => {
-        dispatch(updateItem({ id: data.id, message: data.message, complete: !data.complete }));
+        dispatch(updateItem({ itemId: data.itemId, message: data.message, isCompleted: !data.isCompleted }));
     }
 }
 

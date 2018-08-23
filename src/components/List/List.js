@@ -134,14 +134,14 @@ class List extends Component {
                                 <div ref={provided.innerRef}>
                                     {
                                         this.state.todoList.map((item, index) => (
-                                            <Draggable key={item.id} draggableId={item.id} index={index}>
+                                            <Draggable key={item.itemId} draggableId={item.itemId} index={index}>
                                                 {(provided, snapshot) => (
                                                     <div
                                                         ref={provided.innerRef}
                                                         {...provided.draggableProps}
                                                         {...provided.dragHandleProps}
                                                     >
-                                                        <Row item={item} key={item.id} />
+                                                        <Row item={item} key={item.itemId} />
                                                     </div>
                                                 )}
                                             </Draggable>
@@ -155,7 +155,7 @@ class List extends Component {
                     </DragDropContext>
                 </ul>
                 <Link to="/add" className="nav-button">
-                    X
+                    NEW
                 </Link>
             </div>
         );
