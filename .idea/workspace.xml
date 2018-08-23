@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/List/Row.css" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaf65577-1a07-4de3-9510-7eff9a5ba9d2" name="Default Changelist" comment="Starting Off the App">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-    </list>
+    <list default="true" id="aaf65577-1a07-4de3-9510-7eff9a5ba9d2" name="Default Changelist" comment="Starting Off the App" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -127,8 +123,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="437">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -370,12 +366,12 @@
       <updated>1535014622801</updated>
       <workItem from="1535014624218" duration="2497000" />
       <workItem from="1535017404188" duration="21489000" />
-      <workItem from="1535040291003" duration="240000" />
+      <workItem from="1535040291003" duration="299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24226000" />
+    <option name="totallyTimeSpent" value="24285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="437">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
