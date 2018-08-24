@@ -10,6 +10,11 @@ import Row from "./Row";
 import "./List.css";
 
 class List extends Component {
+  static propTypes = {
+    todoList: PropTypes.array.isRequired,
+    setItems: PropTypes.func.isRequired
+  };
+
   constructor(props) {
     super(props);
 
@@ -192,12 +197,6 @@ class List extends Component {
     );
   }
 }
-
-List.propTypes = {
-  todoList: PropTypes.array.isRequired,
-  setItems: PropTypes.func.isRequired
-};
-
 const mapStateToProps = state => ({
   todoList: state.todo.list
 });

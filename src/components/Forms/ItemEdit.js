@@ -7,6 +7,10 @@ import Form from "./Form";
 import { updateMessage } from "../../Actions/todo/Actions";
 
 class ItemEdit extends Component {
+  static propTypes = {
+    todoList: PropTypes.array.isRequired,
+    updateMessage: PropTypes.func.isRequired
+  };
   findItem() {
     return this.props.todoList.find(
       item => item.itemId === Number(this.props.match.params.id)
@@ -25,11 +29,6 @@ class ItemEdit extends Component {
     );
   }
 }
-
-ItemEdit.propTypes = {
-  todoList: PropTypes.array.isRequired,
-  updateMessage: PropTypes.func.isRequired
-};
 
 const mapStateToProps = state => ({ todoList: state.todo.list });
 

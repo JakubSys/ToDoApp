@@ -7,6 +7,12 @@ import { removeItem, toggleComplete } from "../../Actions/todo/Actions";
 import "./Row.css";
 
 class Row extends Component {
+  static propTypes = {
+    item: PropTypes.object.isRequired,
+    removeItem: PropTypes.func.isRequired,
+    toggleComplete: PropTypes.func.isRequired
+  };
+
   render() {
     return (
       <div>
@@ -43,13 +49,6 @@ class Row extends Component {
     );
   }
 }
-
-Row.propTypes = {
-  item: PropTypes.object.isRequired,
-  removeItem: PropTypes.func.isRequired,
-  toggleComplete: PropTypes.func.isRequired
-};
-
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {

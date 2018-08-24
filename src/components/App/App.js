@@ -10,6 +10,10 @@ import ItemEdit from "../Forms/ItemEdit";
 import { setItems } from "../../Actions/todo/Actions";
 
 class App extends Component {
+  static propTypes = {
+    setItems: PropTypes.func.isRequired
+  };
+
   componentDidMount() {
     this.props.setItems();
   }
@@ -31,10 +35,6 @@ class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  setItems: PropTypes.func.isRequired
-};
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
