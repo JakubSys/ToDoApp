@@ -9,7 +9,7 @@
   font-size: 25px;
 }
 
-.row .button-check {
+.row .button--check {
   display: flex;
   border-radius: 50%;
   height: 20px;
@@ -21,12 +21,12 @@
   align-items: center;
 }
 
-.row .button-check--complete {
+.row .button--check-complete {
   background: #2ebaef;
   border: 1px solid #2ebaef;
 }
 
-.row .button-check--incomplete {
+.row .button--check-incomplete {
   background: white;
 }
 .settings {
@@ -57,7 +57,7 @@ a:visited {
   background: #3ddad775;
   color: black;
 }
-.settings .button-edit {
+.settings .button--edit {
 }
-.settings .button-remove {
+.settings .button--remove {
 }

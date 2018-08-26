@@ -1,4 +1,4 @@
-.list-container {
+.list--container {
   display: flex;
   height: calc(100% - 150px);
   overflow: auto;
@@ -6,14 +6,14 @@
   flex-direction: column;
 }
 
-.list-settings {
+.list--settings {
   padding: 30px 30px 0 30px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.list-settings input {
+.list--settings input {
   font-size: 16px;
   border: 0;
   border-bottom: 1px solid #e1e1e1;
@@ -23,13 +23,13 @@
   margin-bottom: 20px;
 }
 
-.list {
+.list--droppable {
   display: flex;
   flex-direction: column;
   padding: 30px;
   margin: 0;
 }
-.radio-buttons-container {
+.button--radio--container {
   display: flex;
   justify-content: center;
   align-items: center;

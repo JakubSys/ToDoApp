@@ -109,14 +109,14 @@ class List extends Component {
 
   render() {
     return (
-      <div className="list-container">
-        <div className="list-settings">
+      <div className="list--container">
+        <div className="list--settings">
           <input
             ref={this.inputRef}
             onChange={() => this.filterList(this.state.show)}
             placeholder="Search..."
           />
-          <div className="radio-buttons-container">
+          <div className="button button--radio--container">
             <label
               className={`radio-button ${
                 this.state.show === "all" ? "radio-button-active" : null
@@ -162,7 +162,7 @@ class List extends Component {
           </div>
         </div>
         {/*here comes DND LIST WOOOHOOO*/}
-        <ul className="list">
+        <ul className="list--droppable">
           <DragDropContext onDragEnd={this.onDragEnd}>
             <Droppable droppableId="droppable">
               {(provided, snapshot) => (

@@ -20,10 +20,10 @@ class Row extends Component {
           <li className="row">
             <button
               onClick={() => this.props.toggleComplete(this.props.item)}
-              className={`button button-check ${
+              className={`button button--check ${
                 this.props.item.isCompleted
-                  ? "button-check--complete"
-                  : "button-check--incomplete"
+                  ? "button button--check-complete"
+                  : "button button--check-incomplete"
               }`}
               type="button"
             />
@@ -31,13 +31,13 @@ class Row extends Component {
             <div className="settings">
               <Link
                 to={`/edit/${this.props.item.itemId}`}
-                className="button button-edit"
+                className="button button--edit"
               >
                 Edit
               </Link>
               <button
                 onClick={() => this.props.removeItem(this.props.item.itemId)}
-                className="button button-remove"
+                className="button button--remove"
                 type="button"
               >
                 Delete
