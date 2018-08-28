@@ -14,13 +14,13 @@
   flex-wrap: wrap;
 }
 .list--settings input {
-  font-size: 16px;
+  font-size: 1em;
   border: 0;
   border-bottom: 1px solid #e1e1e1;
   outline: none;
   padding: 5px;
   font-family: "Lato Light";
-  margin-bottom: 20px;
+  margin-bottom: 1.250em;
 }
 
 .list--droppable {
@@ -33,25 +33,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.250em;
 }
 .radio-button {
   cursor: pointer;
   position: relative;
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Lato Light";
   padding-left: 25px;
-  line-height: 20px;
+  line-height: 1.250em;
 }
 
 .radio-button input {
   display: none;
 }
 .radio-button:first-child {
-  margin-right: 15px;
+  margin-right: 0.938em;
 }
 .radio-button:nth-child(2) {
-  margin-right: 15px;
+  margin-right: 0.938em;
 }
 .radio-button:before {
   content: "";
